@@ -18,7 +18,15 @@ config file simply specify the following:
 array(
     'module_layouts' => array(
         'ModuleName' => 'layout/some-layout',
-    ),
+        'OtherModuleName' => array(
+            'FullControllerName' => 'layout/some-other-layout'
+        ),
+        'YetAnotherModuleName' => array(
+            'FullControllerName' => array(
+                'action' => 'layout/yet-another-layout'
+            )
+        )
+    )
 );
 ```
 
